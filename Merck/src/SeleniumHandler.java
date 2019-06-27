@@ -66,7 +66,7 @@ public class SeleniumHandler
 	                case "CHROME":
                     {
                     	//File file = new File(PropertiesAndConstants.CurrentDirectory + "/macbook/Documents/iprogrammerAutomation/Drivers/chromedriver");                    	
-                    	System.setProperty("webdriver.chrome.driver",CurrentDirectory + "/jars/chromedriver");
+                    	System.setProperty("webdriver.chrome.driver",CurrentDirectory + "/jars/chromedriver.exe");
                     	//System.setProperty("webdriver.chrome.driver",PropertiesAndConstants.TestData.getProperty("chrome_driver"));
             	        //ChromeOptions options = new ChromeOptions();
             	        //options.addArguments("--test-type");

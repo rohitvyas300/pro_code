@@ -1,8 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -60,7 +56,7 @@ public class keyactions{
 			WebElement element = findElement(xpath);							
 			{				
 				String srcAttribute = element.getAttribute("href");
-				Thread.sleep(3000);
+				Thread.sleep(1000);
 				//System.out.println(srcAttribute+"    srcAttribute is ");
 				if (srcAttribute != null)
 				{
@@ -97,7 +93,7 @@ public class keyactions{
 	
 	
 	public int getElementCount(String xpath) {		
-		WebElement element = findElement(xpath);
+		//WebElement element = findElement(xpath);
 		List<WebElement> totalXpath = SeleniumHandler.Selenium.findElements(By.xpath(xpath));
 		int xpathCount = totalXpath.size();
 		System.out.println("Total xpath: " + xpathCount);
@@ -108,7 +104,7 @@ public class keyactions{
 	public WebElement verifyElementPresence(String xpath) {
 		WebElement element = null;
 		try {	
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				element = SeleniumHandler.Selenium.findElement(By.xpath(xpath));
 		       	WebDriverWait wait = new WebDriverWait(SeleniumHandler.Selenium, 15); 
 			    element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));	

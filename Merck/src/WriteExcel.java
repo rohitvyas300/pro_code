@@ -1,19 +1,7 @@
-
-	
-
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
+
 
 //import org.apache.poi.ss.usermodel.Cell;
 //import org.apache.poi.hssf.usermodel.XSSFRow;
@@ -33,16 +21,11 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 		    public HSSFSheet sheet = null;
 		    public HSSFRow row = null;
 		    public HSSFCell cell = null;
-		    String xlFilePath;
-		 
-//		    public WriteExcel() throws Exception
-//		    {
-//		        
-//		    }
+		    String xlFilePath;	
 		 
 		    public boolean setCellData(String sheetName, String colName, int rowNum, String value) throws IOException
 		    {
-		    	this.xlFilePath = "/Users/macbook/Documents/Medi/Merck/product.xls";
+		    	this.xlFilePath = "D:\\medi\\pro_code\\Merck\\product.xls";
 		        fis = new FileInputStream(xlFilePath);
 		        workbook = new HSSFWorkbook(fis);
 		        fis.close();
